@@ -1,0 +1,55 @@
+.countup-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 0.25rem 0;
+}
+
+.countup-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.countup-value {
+    background-color: #f0f4ff;
+    border-radius: 6px;
+    padding: 6px;
+    width: 80px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.countup-value.animate {
+    animation: numberChange 0.3s ease-out;
+}
+
+.countup-label {
+    background-color: #F79B27;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: 80px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+@keyframes numberChange {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
